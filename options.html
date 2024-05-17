@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator Options</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Options</h1>
+  <label>
+    Password Length:
+    <input type="number" id="passwordLength" value="12" min="4" max="64">
+  </label>
+  <label>
+    Include Uppercase Letters:
+    <input type="checkbox" id="includeUppercase" checked>
+  </label>
+  <label>
+    Include Numbers:
+    <input type="checkbox" id="includeNumbers" checked>
+  </label>
+  <label>
+    Include Symbols:
+    <input type="checkbox" id="includeSymbols" checked>
+  </label>
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+</body>
+</html>

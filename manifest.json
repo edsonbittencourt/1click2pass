@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Password Generator",
+  "version": "1.0",
+  "description": "Generate secure passwords with one click",
+  "permissions": [
+    "storage",
+    "clipboardWrite"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "options_page": "options.html"
+}
